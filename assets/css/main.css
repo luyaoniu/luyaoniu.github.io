@@ -1681,7 +1681,8 @@ ul.text-class {
 			}
 
 			ul.big-image-list img {
-				width: 75px;
+				/*width: 75px;*/
+				width: 400px;
 			}
 
 		/* Header */
@@ -1954,7 +1955,8 @@ ul.text-class {
 			}
 
 			ul.big-image-list li img {
-				width: 100px;
+				/*width: 100px;*/
+				width: 400px;
 			}
 
 			ul.link-list {
