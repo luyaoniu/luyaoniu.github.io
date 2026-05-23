@@ -17,11 +17,13 @@ My research focuses on developing scalable algorithms and methodologies to estab
 - **{{ item.date }}** — {{ item.text }}
 {% endfor %}
 
+{% if site.data.featured_publications and site.data.featured_publications.size > 0 %}
 ## Featured Publications
 
 {% for pub in site.data.featured_publications %}
 - {{ pub.authors }}. "{{ pub.title }}." *{{ pub.venue }}*, {{ pub.year }}.{% if pub.links %} {{ pub.links }}{% endif %}
 {% endfor %}
+{% endif %}
 
 ## Awards and Honors
 
