@@ -29,6 +29,12 @@ timezone: America/Los_Angeles
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Include pages outside the default Jekyll source
+include:
+  - .htaccess
+  - _pages
 
 # Exclude from build
 exclude:
