@@ -11,3 +11,12 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+gem 'csv'
+gem 'base64'
+gem 'logger'
+gem 'bigdecimal'
+gem 'fiddle'
+gem 'observer'
+gem 'ostruct'
+gem 'mutex_m'
+gem 'getoptlong'

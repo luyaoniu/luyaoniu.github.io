@@ -25,3 +25,4 @@ package-lock.json
 scripts/.venv/
 scripts/__pycache__/
 scripts/.pytest_cache/
+vendor/bundle/
