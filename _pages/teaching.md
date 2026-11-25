@@ -6,7 +6,7 @@ author_profile: true
 
 ## Teaching
 
-All courses at the University of Washington unless noted.
+All courses at the University of Washington.
 
 - **TECHIN 509 — Programming for AI Applications** (Fall 2026). Developing course materials, giving weekly lectures, and guiding students in hands-on studios.
 - **TECHIN 542 — Launch Studio I** (Winter 2026). Mentoring student teams on capstone-style projects.
@@ -18,7 +18,6 @@ All courses at the University of Washington unless noted.
 - **TECHIN 512 — Introduction to Sensors and Circuits** (Fall 2024). Connecting digital systems to the physical world through sensors and microcontrollers; sensor selection and hardware system design.
 - **EE 342 — Signals, Systems, and Data II** (Winter 2024). Discrete signal processing: z-transform, DFT, DTFT, and analysis of discrete-time linear systems. *Rating: 4.8 / 5.*
 - **EE 241 — Programming for Signal and Information Processing Applications** (Spring 2023). Fundamental Python programming through hands-on signal and information processing projects. *Rating: 4.5 / 5.*
-- **ECE 2010 — Introduction to Electrical and Computer Engineering** (Fall 2020, Worcester Polytechnic Institute). Teaching assistant; led weekly lab sessions.
 
 ## Mentoring
 
