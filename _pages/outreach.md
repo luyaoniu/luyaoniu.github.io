@@ -14,16 +14,11 @@ author_profile: true
 - **MS Admissions Triage Committee**, UW ECE (Winter 2024)
 - **UW ECE Graduate Applicant Support Program (GASP)** (Fall 2023) — Mentorship and feedback on graduate school applications for underrepresented and marginalized applicants.
 
-## Program Committees
+## Program Committees and Reviewing
 
-- AAAI (2026)
-- AAAI AI Alignment Track (2026)
-- Deep Learning Security and Privacy Workshop (2025)
-
-## Reviewing
-
-- **Conferences:** ACL, AAAI, NeurIPS, ICLR, IEEE CDC, IEEE ICRA, IEEE ACC
-- **Journals:** ACM Transactions on Cyber-Physical Systems; IEEE Internet of Things Journal; IEEE Transactions on Automatic Control, Control Systems Technology, Evolutionary Computation, Information Forensics & Security, Neural Networks and Learning Systems, Power Systems, and Vehicular Technology; IEEE Robotics and Automation Letters; IEEE Control Systems Letters; Elsevier Automatica; Elsevier Pervasive and Mobile Computing; Springer International Journal of Wireless Information Networks
+- **Program committees:** AAAI (2026); AAAI AI Alignment Track (2026); Deep Learning Security and Privacy Workshop (2025)
+- **Conference reviewing:** ACL, AAAI, NeurIPS, ICLR, IEEE CDC, IEEE ICRA, IEEE ACC
+- **Journal reviewing:** ACM Transactions on Cyber-Physical Systems; IEEE Internet of Things Journal; IEEE Transactions on Automatic Control, Control Systems Technology, Evolutionary Computation, Information Forensics & Security, Neural Networks and Learning Systems, Power Systems, and Vehicular Technology; IEEE Robotics and Automation Letters; IEEE Control Systems Letters; Elsevier Automatica; Elsevier Pervasive and Mobile Computing; Springer International Journal of Wireless Information Networks
 
 ## Undergraduate Research Projects
 
