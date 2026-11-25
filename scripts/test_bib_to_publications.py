@@ -163,3 +163,9 @@ def test_question_mark_title_gets_no_extra_period():
 def test_venue_braces_are_stripped():
     entry = {"ENTRYTYPE": "inproceedings", "author": "Li, Bo", "title": "T", "booktitle": "Conf, {IJCAI-23}", "year": "2023"}
     assert "*Conf, IJCAI-23*" in render_publications_markdown([entry])
+
+
+def test_publications_page_redirects_legacy_url():
+    md = render_publications_markdown(parse_bib(FIXTURES / "sample.bib"))
+    front_matter = md.split("---")[1]
+    assert "redirect_from:\n  - /publications.html" in front_matter

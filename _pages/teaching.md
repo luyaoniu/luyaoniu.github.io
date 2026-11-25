@@ -2,6 +2,8 @@
 permalink: /teaching/
 title: "Teaching & Mentoring"
 author_profile: true
+redirect_from:
+  - /teaching.html
 ---
 
 ## Teaching

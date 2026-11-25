@@ -2,6 +2,8 @@
 permalink: /outreach/
 title: "Outreach & Service"
 author_profile: true
+redirect_from:
+  - /outreach.html
 ---
 
 ## Service
