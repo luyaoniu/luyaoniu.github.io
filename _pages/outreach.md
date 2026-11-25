@@ -19,7 +19,3 @@ author_profile: true
 - **Program committees:** AAAI (2026); AAAI AI Alignment Track (2026); Deep Learning Security and Privacy Workshop (2025)
 - **Conference reviewing:** ACL, AAAI, NeurIPS, ICLR, IEEE CDC, IEEE ICRA, IEEE ACC
 - **Journal reviewing:** ACM Transactions on Cyber-Physical Systems; IEEE Internet of Things Journal; IEEE Transactions on Automatic Control, Control Systems Technology, Evolutionary Computation, Information Forensics & Security, Neural Networks and Learning Systems, Power Systems, and Vehicular Technology; IEEE Robotics and Automation Letters; IEEE Control Systems Letters; Elsevier Automatica; Elsevier Pervasive and Mobile Computing; Springer International Journal of Wireless Information Networks
-
-## Undergraduate Research Projects
-
-- **Economically Viable Mechanism for Electrification in Sub-Saharan Africa (SSA).** Electrification is critical for empowering individuals and communities in SSA, yet progress in rural areas and informal communities lags because existing techniques lack economic viability. This project develops a principled incentive mechanism to promote the economic viability of mini-grids, providing electricity access to customers isolated from the main grid. *Student: Anokhi Mehta.*
