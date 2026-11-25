@@ -10,6 +10,8 @@ from bib_to_publications import (
     render_publications_markdown,
     render_featured_yaml,
     AUTHOR_NAME,
+    clean_title,
+    has_equal_contrib,
 )
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -95,3 +97,49 @@ def test_render_publications_markdown_is_idempotent():
     first = render_publications_markdown(entries)
     second = render_publications_markdown(entries)
     assert first == second
+
+
+def test_render_authors_inline_equal_contrib_markers():
+    # Per-author markers in the .bib (e.g. "Jiang$^*$, Fengqing" or "Niu*, Luyao")
+    rendered = render_authors(
+        "Jiang$^*$, Fengqing and Xu*, Zhangchen and Niu$^*$, Luyao and Li, Bo"
+    )
+    assert rendered == "Fengqing Jiang\\*, Zhangchen Xu\\*, **Luyao Niu**\\*, Bo Li"
+
+
+def test_has_equal_contrib_detects_inline_markers():
+    assert has_equal_contrib({"author": "Jiang$^*$, Fengqing and Li, Bo"})
+    assert has_equal_contrib({"equal_contrib": "true", "author": "A, B"})
+    assert not has_equal_contrib({"author": "Li, Bo and Niu, Luyao"})
+
+
+def test_clean_title_strips_braces():
+    assert clean_title("ArtPrompt: {ASCII} Art-based {LLMs}") == "ArtPrompt: ASCII Art-based LLMs"
+
+
+def test_publication_line_renders_note():
+    entry = {
+        "ENTRYTYPE": "inproceedings",
+        "author": "Niu, Luyao",
+        "title": "A Paper",
+        "booktitle": "ACL",
+        "year": "2025",
+        "note": "Oral Presentation",
+    }
+    md = render_publications_markdown([entry])
+    assert '- **Luyao Niu**. "A Paper." *ACL*, 2025. **Oral Presentation.**' in md
+    assert "equal contribution" not in md
+
+
+def test_render_authors_others_becomes_et_al():
+    assert render_authors("Li, Bo and Niu, Luyao and others") == "Bo Li, **Luyao Niu**, et al."
+
+
+def test_question_mark_title_gets_no_extra_period():
+    entry = {"ENTRYTYPE": "inproceedings", "author": "Li, Bo", "title": "Can it?", "booktitle": "X", "year": "2026"}
+    assert '"Can it?"' in render_publications_markdown([entry])
+
+
+def test_venue_braces_are_stripped():
+    entry = {"ENTRYTYPE": "inproceedings", "author": "Li, Bo", "title": "T", "booktitle": "Conf, {IJCAI-23}", "year": "2023"}
+    assert "*Conf, IJCAI-23*" in render_publications_markdown([entry])
