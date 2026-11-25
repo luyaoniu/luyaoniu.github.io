@@ -13,7 +13,7 @@ My research aims to develop scalable algorithms and methodologies to establish t
 
 ## News
 
-{% for item in site.data.news limit:6 %}
+{% for item in site.data.news %}
 - **{{ item.date }}** — {{ item.text }}
 {% endfor %}
 

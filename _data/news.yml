@@ -1,17 +1,41 @@
 - date: "2026"
-  text: "Awarded a UW SEED-AI Grant as PI (*ENGINE×LAUNCH-AI*) and a UW ECE Curriculum Development grant as co-PI (*Integrating Agentic AI into EE 241*)."
+  text: "Paper accepted at NeurIPS 2026: *JobBench: Aligning Agent Work with Human Will.*"
 
 - date: "2026"
-  text: "Papers accepted at NeurIPS 2026 (*JobBench*), COLM 2026 (*Visual Aesthetic Benchmark*), and ACL 2026 (*BadScientist*; *Temporal Sampling for Forgotten Reasoning in LLMs*)."
+  text: "Paper accepted at COLM 2026: *Visual Aesthetic Benchmark: Can Frontier Models Judge Beauty?*"
 
 - date: "2026"
-  text: "Journal papers accepted at TMLR (*TinyV*) and DMLR (*VisualSphinx*)."
+  text: "Paper accepted at ACL 2026: *BadScientist: Can a Research Agent Write Convincing but Unsound Papers that Fool LLM Reviewers?*"
+
+- date: "2026"
+  text: "Paper accepted at ACL 2026: *Temporal Sampling for Forgotten Reasoning in LLMs.*"
+
+- date: "2026"
+  text: "Paper accepted at TMLR: *TinyV: Reducing False Negatives in Verification Improves RL for LLM Reasoning.*"
+
+- date: "2026"
+  text: "Paper accepted at DMLR: *VisualSphinx: Large-Scale Synthetic Vision Logic Puzzles for RL.*"
 
 - date: "2025"
-  text: "*SafeChain* (ACL 2025) received an Honorable Mention at the NeurIPS 2025 Human-AI Alignment (Bi-Align) Workshop."
+  text: "Paper accepted at CDC 2025: *Submodular Swarm Assignment for Multi-Agent Systems.*"
 
 - date: "2025"
-  text: "Papers at ICLR 2025 (*Magpie*), AAAI 2025 (*ChatBug*), NAACL 2025 (*Stronger Models are Not Stronger Teachers*, oral), ACL 2025, ACC 2025, and CDC 2025."
+  text: "Paper accepted at ACL 2025: *SafeChain: Safety of Language Models with Long Chain-of-Thought Reasoning Capabilities* (Honorable Mention at NeurIPS 2025 Bi-Align Workshop)."
 
-- date: "2024"
-  text: "Joined the UW ECE Department as an Assistant Teaching Professor."
+- date: "2025"
+  text: "Paper accepted at ACL 2025: *Small Models Struggle to Learn from Strong Reasoners.*"
+
+- date: "2025"
+  text: "Paper accepted at NAACL 2025 (oral): *Stronger Models are Not Stronger Teachers for Instruction Tuning.*"
+
+- date: "2025"
+  text: "Paper accepted at ACC 2025: *Modeling and Designing Non-Pharmaceutical Interventions in Epidemics: A Submodular Approach.*"
+
+- date: "2025"
+  text: "Paper accepted at ICLR 2025: *SOSBench: Benchmarking Safety Alignment on Scientific Knowledge.*"
+
+- date: "2025"
+  text: "Paper accepted at ICLR 2025: *Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing.*"
+
+- date: "2025"
+  text: "Paper accepted at AAAI 2025: *ChatBug: A Common Vulnerability of Aligned LLMs Induced by Chat Templates.*"
