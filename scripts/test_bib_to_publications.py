@@ -59,7 +59,27 @@ def test_render_links_includes_doi_and_code():
     links = render_links(entry)
     assert "[DOI](https://doi.org/10.1109/XYZ.2024.000000)" in links
     assert "[arXiv](https://arxiv.org/abs/2300.00000)" in links
-    assert "[code](https://github.com/example/code)" in links
+    assert "[Code](https://github.com/example/code)" in links
+
+
+def test_render_links_arxiv_field_and_order():
+    entry = {
+        "doi": "10.18653/v1/2024.acl-long.303",
+        "arxiv": "2402.08983",
+        "code": "https://github.com/uw-nsl/SafeDecoding",
+        "project": "https://example.github.io/",
+    }
+    assert render_links(entry) == (
+        "[DOI](https://doi.org/10.18653/v1/2024.acl-long.303)"
+        " · [arXiv](https://arxiv.org/abs/2402.08983)"
+        " · [Code](https://github.com/uw-nsl/SafeDecoding)"
+        " · [Project](https://example.github.io/)"
+    )
+
+
+def test_render_links_non_arxiv_url_is_paper():
+    links = render_links({"url": "https://openreview.net/forum?id=abc"})
+    assert links == "[Paper](https://openreview.net/forum?id=abc)"
 
 
 def test_render_links_empty_when_no_fields():

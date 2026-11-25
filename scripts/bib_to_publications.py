@@ -119,14 +119,16 @@ def render_links(entry: dict) -> str:
     if doi := entry.get("doi"):
         links.append(f"[DOI](https://doi.org/{doi.strip()})")
     if url := entry.get("url"):
-        label = "arXiv" if "arxiv.org" in url.lower() else "URL"
+        label = "arXiv" if "arxiv.org" in url.lower() else "Paper"
         links.append(f"[{label}]({url.strip()})")
+    if arxiv_id := entry.get("arxiv"):
+        links.append(f"[arXiv](https://arxiv.org/abs/{arxiv_id.strip()})")
     if pdf := entry.get("pdf"):
         links.append(f"[PDF]({pdf.strip()})")
     if code := entry.get("code"):
-        links.append(f"[code]({code.strip()})")
+        links.append(f"[Code]({code.strip()})")
     if project := entry.get("project"):
-        links.append(f"[project]({project.strip()})")
+        links.append(f"[Project]({project.strip()})")
     return " · ".join(links)
 
 
